@@ -101,6 +101,8 @@
 
   <script src="Build/UnityLoader.js"></script>
   <script>
+	  	      		  function hide(){window.scrollTo(0,1)}
+
   var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebBuild.json", {onProgress: UnityProgress});
   function UnityProgress(gameInstance, progress) {
     if (!gameInstance.Module) {
@@ -116,12 +118,13 @@
     gameInstance.progress.style.transform = `scaleX(${progress})`;
     if (progress === 1 && !gameInstance.removeTimeout) {
       gameInstance.removeTimeout = setTimeout(function() {
-	      		  function hide(){window.scrollTo(0,1)}
 
           loader.style.display = "none";
       }, 2000);
     }
   }
+	  	      		  function hide(){window.scrollTo(0,1)}
+
   </script>
 
 
