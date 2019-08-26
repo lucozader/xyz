@@ -116,6 +116,8 @@
     gameInstance.progress.style.transform = `scaleX(${progress})`;
     if (progress === 1 && !gameInstance.removeTimeout) {
       gameInstance.removeTimeout = setTimeout(function() {
+	      		  function hide(){window.scrollTo(0,50vw)}
+
           loader.style.display = "none";
       }, 2000);
     }
