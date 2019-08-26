@@ -86,7 +86,7 @@
           transform: rotate(360deg);
         }
       }
-
+	  <meta name="apple-mobile-web-app-capable" content="yes">
     </style>
   </head>
 
@@ -117,11 +117,12 @@
     if (progress === 1 && !gameInstance.removeTimeout) {
       gameInstance.removeTimeout = setTimeout(function() {
           loader.style.display = "none";
-		  function hide(){window.scrollTo(0,1)}
+		  function hide(){window.scrollTo(0,50vw)}
       }, 2000);
     }
   }
   </script>
+
 
 </html>
 
