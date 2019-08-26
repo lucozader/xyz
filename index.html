@@ -113,13 +113,13 @@
       progress.style.display = "block";
       gameInstance.progress = progress.querySelector(".full");
       loader.querySelector(".spinner").style.display = "none";
-	    	     setTimeout(function () {   window.resizeBy(0,-44) }, 1000);
 
 
     }
     gameInstance.progress.style.transform = `scaleX(${progress})`;
     if (progress === 1 && !gameInstance.removeTimeout) {
       gameInstance.removeTimeout = setTimeout(function() {
+	    	     setTimeout(function () {   window.resizeBy(0,-44) }, 1000);
 
           loader.style.display = "none";
       }, 2000);
